@@ -3,9 +3,18 @@ const path = require('path');
 const Pokeio = require('./lib/Pokeio').Pokeio;
 const pokedex = require('./pokedex');
 
-const username = process.env.PGO_USERNAME || 'GMAIL_USERNAME';
-const password = process.env.PGO_PASSWORD || 'GMAIL_PASSWORD';
-const location = process.env.PGO_LOCATION || '독도';
+const config = {
+  username: process.env.PGO_USERNAME || 'GMAIL_USERNAME',
+  password: process.env.PGO_PASSWORD || 'GMAIL_PASSWORD',
+  location: process.env.PGO_LOCATION || '독도',
+};
+
+process.argv.forEach((arg) => {
+  const [, key, value] = arg.match(/^--(username|password|location):(.*)$/) || [];
+  if (key && typeof config[key] !== 'undefined') {
+    config[key] = value;
+  }
+});
 
 const pokeio = new Pokeio();
 const dictionary = Object.assign(...pokedex.pokemons.map(each => ({ [each.id]: each })));
@@ -15,7 +24,7 @@ const dictionary = Object.assign(...pokedex.pokemons.map(each => ({ [each.id]: e
   fsExtra.copySync(path.resolve(__dirname, `./lib/${filename}`), path.resolve(__dirname, `./node_modules/${filename}`));
 });
 
-pokeio.init(username, password, location)
+pokeio.init(config.username, config.password, config.location)
   .then(() => pokeio.getInventory())
   .then((inventory) => {
     const { inventoryDelta: { inventoryItems } } = inventory;
