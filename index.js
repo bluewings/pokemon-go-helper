@@ -123,6 +123,6 @@ pokeio.init(config.username, config.password, config.location)
     console.log(`[i] updateing ${targets.length} items.`);
     targets.reduce((promise, pokemon) => promise.then(() => {
       // 하나씩 이름을 변경한다.
-      pokeio.renamePokemon(pokemon.id, pokemon.newNickname);
+      return pokeio.renamePokemon(pokemon.id, pokemon.newNickname);
     }), Promise.resolve());
   });
