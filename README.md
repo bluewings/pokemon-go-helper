@@ -33,5 +33,5 @@ $ node index.js --username:GMAIL_USERNAME --password:GMAIL_PASSWORD
 [i] update nickname: 쁘사이저 95 SS
 ```
 
-IV GO 앱에 표시되는 내용과 이름이 동일한 것을 확인<br>
+- IV GO 앱에 표시되는 내용과 이름이 동일한 것을 확인<br><br>
 <img src="/sample/img/iv-go.jpeg" width="300">
