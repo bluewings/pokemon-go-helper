@@ -1,0 +1,1018 @@
+{
+  "cells": [
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270555,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270555,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270554,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270554,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270553,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270553,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [
+        {
+          "FortId": "735e8cdedbc94a43ac1bb21ff068e8c0.16",
+          "LastModifiedMs": {
+            "low": 342462468,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.267958,
+          "Longitude": 127.002614,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "f08265bac3a44f56b23c14a71959323d.16",
+          "LastModifiedMs": {
+            "low": 338009860,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.267979,
+          "Longitude": 127.003353,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        }
+      ],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 85,
+          "DistanceMeters": 371.97467041015625,
+          "EncounterId": {
+            "low": -1227850199,
+            "high": 1699962236,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 127,
+          "DistanceMeters": 371.97467041015625,
+          "EncounterId": {
+            "low": -1638161076,
+            "high": 2039996296,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 98,
+          "DistanceMeters": 371.97467041015625,
+          "EncounterId": {
+            "low": -740124821,
+            "high": 92385167,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 60,
+          "DistanceMeters": 317.597900390625,
+          "EncounterId": {
+            "low": 253702933,
+            "high": -1608023598,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270552,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [
+        {
+          "FortId": "8c8c9eca54494fb690cbc4aa96afba00.16",
+          "LastModifiedMs": {
+            "low": 371047233,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.268653,
+          "Longitude": 127.006301,
+          "Team": 2,
+          "GuardPokemonId": 131,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": null,
+          "GymPoints": {
+            "low": 4671,
+            "high": 0,
+            "unsigned": false
+          },
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "a422a9b8fed34fa19351c1e228a5644e.16",
+          "LastModifiedMs": {
+            "low": 321132392,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.26907,
+          "Longitude": 127.005499,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "abbfd6673a9641d3a40a613f0397a871.16",
+          "LastModifiedMs": {
+            "low": 357052510,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.269038,
+          "Longitude": 127.007246,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "c9055e0439e745aabb83947395206ad8.16",
+          "LastModifiedMs": {
+            "low": 315165559,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.268269,
+          "Longitude": 127.005282,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        }
+      ],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 48,
+          "DistanceMeters": 730.3162841796875,
+          "EncounterId": {
+            "low": -142281647,
+            "high": -1482521975,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 74,
+          "DistanceMeters": 730.3162841796875,
+          "EncounterId": {
+            "low": 2134696054,
+            "high": -117008476,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270552,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 60,
+          "DistanceMeters": 597.172119140625,
+          "EncounterId": {
+            "low": 1040987508,
+            "high": 1759005903,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 92,
+          "DistanceMeters": 597.172119140625,
+          "EncounterId": {
+            "low": -1040385926,
+            "high": -130344174,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270559,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270559,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270558,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [
+        {
+          "FortId": "b0e7357a241b492eac335950db182057.16",
+          "LastModifiedMs": {
+            "low": 371610597,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.267382,
+          "Longitude": 126.999887,
+          "Team": 2,
+          "GuardPokemonId": 143,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": null,
+          "GymPoints": {
+            "low": 1138,
+            "high": 0,
+            "unsigned": false
+          },
+          "IsInBattle": true,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "f69fd71d2267487784ed16e93366277f.16",
+          "LastModifiedMs": {
+            "low": 333002786,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.268328,
+          "Longitude": 127.000091,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        }
+      ],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 120,
+          "DistanceMeters": 241.91424560546875,
+          "EncounterId": {
+            "low": 669875052,
+            "high": 435708406,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 52,
+          "DistanceMeters": 241.91424560546875,
+          "EncounterId": {
+            "low": -1788008252,
+            "high": -1142862297,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 69,
+          "DistanceMeters": 241.91424560546875,
+          "EncounterId": {
+            "low": 779325513,
+            "high": 167309099,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 127,
+          "DistanceMeters": 241.91424560546875,
+          "EncounterId": {
+            "low": 711430291,
+            "high": 1107520835,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270558,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 10,
+          "DistanceMeters": 241.91424560546875,
+          "EncounterId": {
+            "low": -2018468493,
+            "high": 967224520,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 127,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -1478587866,
+            "high": 1871507343,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 1,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": 843384544,
+            "high": -781198970,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270557,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270557,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 16,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -1002055596,
+            "high": 1946632965,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 1,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": 2126686378,
+            "high": 797465666,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 60,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -456464812,
+            "high": 1653450266,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270556,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [
+        {
+          "FortId": "c4a8bee7a9e5449a972c6caa18222f09.16",
+          "LastModifiedMs": {
+            "low": 371530218,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.265161,
+          "Longitude": 127.001068,
+          "Team": 2,
+          "GuardPokemonId": 130,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": null,
+          "GymPoints": {
+            "low": 6838,
+            "high": 0,
+            "unsigned": false
+          },
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "d47015a034794f1baad09ce38c68426a.16",
+          "LastModifiedMs": {
+            "low": 334386185,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.264818,
+          "Longitude": 127.001214,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        },
+        {
+          "FortId": "f66ac943eb03470ea2e08d2e544d1cd2.16",
+          "LastModifiedMs": {
+            "low": 340184178,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.26604,
+          "Longitude": 127.000875,
+          "Team": null,
+          "GuardPokemonId": null,
+          "GuardPokemonLevel": null,
+          "Enabled": true,
+          "FortType": 1,
+          "GymPoints": null,
+          "IsInBattle": null,
+          "ActiveFortModifier": null,
+          "LureInfo": null,
+          "CooldownCompleteMs": null,
+          "Sponsor": null,
+          "RenderingType": null
+        }
+      ],
+      "SpawnPoint": [],
+      "WildPokemon": [
+        {
+          "EncounterId": {
+            "low": -26516157,
+            "high": -930882344,
+            "unsigned": true
+          },
+          "LastModifiedMs": {
+            "low": 371612651,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.266097549881735,
+          "Longitude": 127.0003976051154,
+          "SpawnPointId": "357b431c375",
+          "pokemon": {
+            "Id": null,
+            "PokemonId": 21,
+            "cp": null
+          },
+          "TimeTillHiddenMs": -371612652
+        },
+        {
+          "EncounterId": {
+            "low": -690316260,
+            "high": -1917127643,
+            "unsigned": true
+          },
+          "LastModifiedMs": {
+            "low": 371612651,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.26621184586628,
+          "Longitude": 127.00048151419774,
+          "SpawnPointId": "357b431c3a7",
+          "pokemon": {
+            "Id": null,
+            "PokemonId": 98,
+            "cp": null
+          },
+          "TimeTillHiddenMs": -371612652
+        },
+        {
+          "EncounterId": {
+            "low": -1103081660,
+            "high": -1327072974,
+            "unsigned": true
+          },
+          "LastModifiedMs": {
+            "low": 371612651,
+            "high": 346,
+            "unsigned": false
+          },
+          "Latitude": 37.26625375843494,
+          "Longitude": 127.0005654231835,
+          "SpawnPointId": "357b431c3af",
+          "pokemon": {
+            "Id": null,
+            "PokemonId": 19,
+            "cp": null
+          },
+          "TimeTillHiddenMs": -371612652
+        }
+      ],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [
+        {
+          "SpawnPointId": "357b431c375",
+          "EncounterId": {
+            "low": -26516157,
+            "high": -930882344,
+            "unsigned": true
+          },
+          "PokedexTypeId": 21,
+          "ExpirationTimeMs": {
+            "low": -1,
+            "high": -1,
+            "unsigned": false
+          },
+          "Latitude": 37.266097549881735,
+          "Longitude": 127.0003976051154
+        },
+        {
+          "SpawnPointId": "357b431c3a7",
+          "EncounterId": {
+            "low": -690316260,
+            "high": -1917127643,
+            "unsigned": true
+          },
+          "PokedexTypeId": 98,
+          "ExpirationTimeMs": {
+            "low": -1,
+            "high": -1,
+            "unsigned": false
+          },
+          "Latitude": 37.26621184586628,
+          "Longitude": 127.00048151419774
+        },
+        {
+          "SpawnPointId": "357b431c3af",
+          "EncounterId": {
+            "low": -1103081660,
+            "high": -1327072974,
+            "unsigned": true
+          },
+          "PokedexTypeId": 19,
+          "ExpirationTimeMs": {
+            "low": -1,
+            "high": -1,
+            "unsigned": false
+          },
+          "Latitude": 37.26625375843494,
+          "Longitude": 127.0005654231835
+        }
+      ],
+      "NearbyPokemon": [
+        {
+          "PokedexNumber": 98,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -1958008159,
+            "high": -2062576392,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 27,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": 2128605711,
+            "high": 1831695767,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 60,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": 1322918417,
+            "high": -2136327123,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 120,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -18362012,
+            "high": -1653095409,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 102,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -1072074111,
+            "high": -1132484859,
+            "unsigned": true
+          }
+        },
+        {
+          "PokedexNumber": 120,
+          "DistanceMeters": null,
+          "EncounterId": {
+            "low": -560990401,
+            "high": -785462521,
+            "unsigned": true
+          }
+        }
+      ]
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270556,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270551,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270551,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270561,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": 1073741824,
+        "high": 897270560,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    },
+    {
+      "S2CellId": {
+        "low": -1073741824,
+        "high": 897270560,
+        "unsigned": true
+      },
+      "AsOfTimeMs": {
+        "low": 371612651,
+        "high": 346,
+        "unsigned": false
+      },
+      "Fort": [],
+      "SpawnPoint": [],
+      "WildPokemon": [],
+      "IsTruncatedList": null,
+      "FortSummary": [],
+      "DecimatedSpawnPoint": [],
+      "MapPokemon": [],
+      "NearbyPokemon": []
+    }
+  ]
+}
