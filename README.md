@@ -21,3 +21,14 @@ $ npm install
 ```
 $ node index.js --username:GMAIL_USERNAME --password:GMAIL_PASSWORD
 ```
+```
+[i] Logging with user: GMAIL_USERNAME
+[i] Received Google access token!
+[i] Received API Endpoint: https://pgorelease.nianticlabs.com/plfe/323/rpc
+[i] updateing 5 items.
+[i] update nickname: 야도란 88 A
+[i] update nickname: 콘치 75 B •
+[i] update nickname: 아쿠스타 97 SS
+[i] update nickname: 마그마 55 C
+[i] update nickname: 쁘사이저 95 SS
+```
