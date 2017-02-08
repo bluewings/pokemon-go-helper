@@ -18,11 +18,20 @@ $ npm install
 ```
 
 ### Run
+- 지메일, 패스워드를 prompt 로 입력
+```
+$ node index.js 혹은 npm start
+```
+
+- 지메일, 패스워드를 파라미터로 넘기는 경우 배치 작업 시 이용
 ```
 $ node index.js --username:GMAIL_USERNAME --password:GMAIL_PASSWORD
 ```
 ```
-[i] Logging with user: GMAIL_USERNAME
+[Pokémon Go Helper] gmail: youraccount@gmail.com
+[Pokémon Go Helper] password: ********
+[Pokémon Go Helper] location: 
+[i] Logging with user: youraccount@gmail.com
 [i] Received Google access token!
 [i] Received API Endpoint: https://pgorelease.nianticlabs.com/plfe/323/rpc
 [i] updateing 5 items.
