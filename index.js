@@ -8,11 +8,11 @@ const config = {
   username: process.env.PGO_USERNAME || null,
   password: process.env.PGO_PASSWORD || null,
   location: process.env.PGO_LOCATION || '경기도 성남시 분당구 정자동',
-  task: 0,
+  task: 1,
 };
 
 process.argv.forEach((arg) => {
-  const [, key, value] = arg.match(/^--(username|password|location):(.*)$/) || [];
+  const [, key, value] = arg.match(/^--(username|password|location|task):(.*)$/) || [];
   if (key && typeof config[key] !== 'undefined') {
     config[key] = value;
   }
@@ -37,21 +37,36 @@ if (config.username && config.password) {
     })
     .then((password) => {
       config.password = password || config.password;
-      return util.askHidden('[Pokémon Go Helper] location: ');
+      return util.ask('[Pokémon Go Helper] location: ');
     })
     .then((location) => {
       config.location = location || config.location;
+      if (task.length <= 1) {
+        return config.task;
+      }
+      const defaultTask = (parseInt(config.task, 10) || 1) - 1;
+      console.log('');
+      console.log('Please select an action to perform.');
+      task.forEach((each, i) => {
+        console.log(`${i + 1}. ${each.description}${i === defaultTask ? ' (default)' : ''}`);
+      });
+      console.log('');
+      return util.ask('[Pokémon Go Helper] task number: ');
+    })
+    .then((taskNum) => {
+      config.task = taskNum;
       return config;
     });
 }
 
 next.then((userConfig) => {
+  console.log('');
   pokeio.init(userConfig.username, userConfig.password, userConfig.location)
     .then(() => {
-      // task[userConfig.]
-      if (task[userConfig.task] && typeof task[userConfig.task].runner === 'function') {
-        console.log(`[i] execute '${task[userConfig.task].name}' task. : ${task[userConfig.task].description}`);
-        task[userConfig.task].runner(pokeio);
+      const taskNum = (parseInt(userConfig.task, 10) || 1) - 1;
+      if (task[taskNum] && typeof task[taskNum].runner === 'function') {
+        console.log(`[i] execute '${task[taskNum].name}' task. : ${task[taskNum].description}`);
+        task[taskNum].runner(pokeio);
       } else {
         console.log('[i] unknown task.');
       }
