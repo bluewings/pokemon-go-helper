@@ -54,21 +54,37 @@ if (config.username && config.password) {
       return util.ask('[Pokémon Go Helper] task number: ');
     })
     .then((taskNum) => {
-      config.task = taskNum;
+      if (taskNum.search(/^[0-9]+$/) !== -1) {
+        config.task = taskNum;
+      }
       return config;
     });
 }
 
 next.then((userConfig) => {
   console.log('');
-  pokeio.init(userConfig.username, userConfig.password, userConfig.location)
-    .then(() => {
-      const taskNum = (parseInt(userConfig.task, 10) || 1) - 1;
-      if (task[taskNum] && typeof task[taskNum].runner === 'function') {
-        console.log(`[i] execute '${task[taskNum].name}' task. : ${task[taskNum].description}`);
-        task[taskNum].runner(pokeio);
-      } else {
-        console.log('[i] unknown task.');
-      }
+  const taskNum = (parseInt(userConfig.task, 10) || 1) - 1;
+  if (task[taskNum] && typeof task[taskNum].runner === 'function') {
+    let getTaskOpts;
+    if (typeof task[taskNum].options === 'object') {
+      getTaskOpts = Object.keys(task[taskNum].options).reduce((promise, name) => promise.then(() =>
+        util.ask(`[${task[taskNum].name}] ${task[taskNum].options[name]} `)
+          .then((value) => {
+            // eslint-disable-next-line no-param-reassign
+            userConfig[name] = value;
+          }))
+      , Promise.resolve());
+    } else {
+      getTaskOpts = Promise.resolve();
+    }
+    getTaskOpts.then(() => {
+      pokeio.init(userConfig.username, userConfig.password, userConfig.location)
+        .then(() => {
+          console.log(`[i] execute '${task[taskNum].name}' task. : ${task[taskNum].description}`);
+          task[taskNum].runner(pokeio);
+        });
     });
+  } else {
+    console.log('[i] unknown task.');
+  }
 });
