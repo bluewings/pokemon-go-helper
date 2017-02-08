@@ -8,7 +8,7 @@
 
 ### Requirements
 - Install nodejs : http://nodejs.org/ - ver. 6.9.2 ↑
-(; 'brew install node' is possible)
+<br>(; 'brew install node' is possible)
 
 ### Install node packages
 ```
