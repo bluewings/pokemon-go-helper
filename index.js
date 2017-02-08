@@ -54,7 +54,7 @@ if (config.username && config.password) {
       return util.ask('[Pokémon Go Helper] task number: ');
     })
     .then((taskNum) => {
-      if (taskNum.search(/^[0-9]+$/) !== -1) {
+      if ((`${taskNum}`).search(/^[0-9]+$/) !== -1) {
         config.task = taskNum;
       }
       return config;
@@ -81,7 +81,10 @@ next.then((userConfig) => {
       pokeio.init(userConfig.username, userConfig.password, userConfig.location)
         .then(() => {
           console.log(`[i] execute '${task[taskNum].name}' task. : ${task[taskNum].description}`);
-          task[taskNum].runner(pokeio);
+          const options = Object.assign({}, userConfig);
+          delete options.username;
+          delete options.password;
+          task[taskNum].runner(pokeio, options);
         });
     });
   } else {

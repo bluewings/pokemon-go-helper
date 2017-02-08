@@ -7,8 +7,12 @@ const dictionary = Object.assign(...pokedex.pokemons.map(each => ({ [each.id]: e
 const EVOLVE_XP = 500;
 const CAPTURE_XP = 500;
 
-module.exports = (pokeio) => {
-  pokeio._getInventory()
+module.exports = (pokeio, options) => {
+  let { printCSV, pointOnly } = options;
+  printCSV = (printCSV || '').trim().toLowerCase();
+  pointOnly = (pointOnly || '').trim().toLowerCase();
+
+  pokeio.getInventory()
     .then((inventory) => {
       const { inventoryDelta: { inventoryItems } } = inventory;
 
@@ -81,20 +85,21 @@ module.exports = (pokeio) => {
         const evolveXP = evolveCount * EVOLVE_XP;
         const captureXP = (evolveCount && nextId && !captured[nextId]) ? CAPTURE_XP : 0;
         totalXP += evolveXP + captureXP;
-
-        rows.push([
-          familyId,
-          pokeId,
-          nameKo,
-          count,            // 총개체수
-          availCandy.candy, // 보유캔디: 해당 패밀리의 캔디 잔여 수량
-          candyCount || '', // 필요캔디: 진화에 필요한 캔디
-          evolveCount,      // 진화개체: 진화 가능한 개체 수
-          usedCandy,        // 사용캔디: 사용한 캔디 수
-          evolveXP,         // 진화점수
-          captureXP,        // 발견점수
-          totalXP,          // 누적점수
-        ]);
+        if (pointOnly !== 'y' || (evolveXP + captureXP) > 0) {
+          rows.push([
+            familyId,
+            pokeId,
+            nameKo,
+            count,            // 총개체수
+            availCandy.candy, // 보유캔디: 해당 패밀리의 캔디 잔여 수량
+            candyCount || '', // 필요캔디: 진화에 필요한 캔디
+            evolveCount,      // 진화개체: 진화 가능한 개체 수
+            usedCandy,        // 사용캔디: 사용한 캔디 수
+            evolveXP,         // 진화점수
+            captureXP,        // 발견점수
+            totalXP,          // 누적점수
+          ]);
+        }
         availCandy.candy -= usedCandy;
       });
       const table = util.printTable({
@@ -104,7 +109,7 @@ module.exports = (pokeio) => {
           '진화점수', '발견점수', '누적점수',
         ],
         body: rows,
-      });
+      }, printCSV === 'y');
       console.log(table);
     });
 };
