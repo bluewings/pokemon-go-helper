@@ -7,7 +7,7 @@
 | <img src="/sample/img/pokemons-before.jpeg" width="400"> | <img src="/sample/img/pokemons-after.jpeg" width="400"> |
 
 ### Requirements
-- Install nodejs : http://nodejs.org/
+- Install nodejs : http://nodejs.org/ - ver. 6.9.2 ↑
 (; 'brew install node' is possible)
 
 ### Install node packages
