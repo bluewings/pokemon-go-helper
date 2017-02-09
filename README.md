@@ -47,6 +47,7 @@ $ npm start
 Please select an action to perform.
 1. 포켓몬의 닉네임을 변경합니다. (default)
 2. 진화로 획득가능한 경험치를 계산합니다.
+3. 포켓몬 목록을 엑셀로 다운로드합니다.
 
 [Pokémon Go Helper] task number: 1
 
