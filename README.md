@@ -1,6 +1,6 @@
 # pokemon-go-helper
 
-'포켓몬 GO'에 도움이 되는 스크립트 모음입니다.
+포켓몬고에 도움이 되는 스크립트 모음입니다.
 
 1. 포켓몬의 이름에 IV값과 진화가능여부를 표시해줍니다.
 
@@ -29,6 +29,14 @@ $ node index.js 혹은 npm start
 $ node index.js --username:GMAIL_USERNAME --password:GMAIL_PASSWORD
 ```
 
+----------
+
+### #1 포켓몬 닉네임 변경 (IV값, 랭크, 진화여부 표시)
+
+| BEFORE | AFTER |
+|--------|-------|
+| <img src="/sample/img/pokemons-before.jpeg" width="400"> | <img src="/sample/img/pokemons-after.jpeg" width="400"> |
+
 ```
 $ npm start
 [Pokémon Go Helper] gmail: youraccount@gmail.com
@@ -54,14 +62,6 @@ Please select an action to perform.
 [i] update nickname: 마그마 55 C
 [i] update nickname: 쁘사이저 95 SS
 ```
-
-----------
-
-### #1 포켓몬 닉네임 변경 (IV값, 랭크, 진화여부 표시)
-
-| BEFORE | AFTER |
-|--------|-------|
-| <img src="/sample/img/pokemons-before.jpeg" width="400"> | <img src="/sample/img/pokemons-after.jpeg" width="400"> |
 
 ### #2 포켓몬 닉네임 변경
 
