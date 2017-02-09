@@ -1,6 +1,8 @@
 const values = require('object.values');
+const moment = require('moment');
 const pokedex = require('../pokedex');
 const util = require('../lib/util');
+const xlsx = require('../lib/xlsx');
 
 const dictionary = Object.assign(...pokedex.pokemons.map(each => ({ [each.id]: each })));
 
@@ -8,9 +10,9 @@ const EVOLVE_XP = 500;
 const CAPTURE_XP = 500;
 
 module.exports = (pokeio, options) => {
-  let { printCSV, pointOnly } = options;
-  printCSV = (printCSV || '').trim().toLowerCase();
-  pointOnly = (pointOnly || '').trim().toLowerCase();
+  let { exportAsXlsx, pointOnly } = options;
+  exportAsXlsx = (exportAsXlsx || 'n').trim().toLowerCase();
+  pointOnly = (pointOnly || 'n').trim().toLowerCase();
 
   pokeio.getInventory()
     .then((inventory) => {
@@ -102,14 +104,26 @@ module.exports = (pokeio, options) => {
         }
         availCandy.candy -= usedCandy;
       });
+
+      // 화면에 표시
+      const head = [
+        '종족', '번호', '이름', '총개체수',
+        '보유캔디', '필요캔디', '진화개체', '사용캔디',
+        '진화점수', '발견점수', '누적점수',
+      ];
       const table = util.printTable({
-        head: [
-          '종족', '번호', '이름', '총개체수',
-          '보유캔디', '필요캔디', '진화개체', '사용캔디',
-          '진화점수', '발견점수', '누적점수',
-        ],
+        head,
         body: rows,
-      }, printCSV === 'y');
+      });
       console.log(table);
+
+      // 엑셀로 추가 저장
+      if (exportAsXlsx === 'y') {
+        const xlsxData = rows.slice();
+        xlsxData.unshift(head);
+        const filepath = xlsx.writeFile(xlsxData, `${(options.username || '').split('@')[0]}.simulate-evolution.${moment().format('YYYYMMDDHHmmss')}.xlsx`);
+        console.log('');
+        console.log(`[i] Saved as an Excel file. - ${filepath}`);
+      }
     });
 };

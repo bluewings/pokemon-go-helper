@@ -82,7 +82,6 @@ next.then((userConfig) => {
         .then(() => {
           console.log(`[i] execute '${task[taskNum].name}' task. : ${task[taskNum].description}`);
           const options = Object.assign({}, userConfig);
-          delete options.username;
           delete options.password;
           task[taskNum].runner(pokeio, options);
         });
