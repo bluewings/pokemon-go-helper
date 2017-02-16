@@ -20,15 +20,15 @@ module.exports = (pokeio, options) => {
 
       const items = inventoryItems.map(each => each.inventoryItemData);
 
-      const candies = Object.assign(...items.map(each => each.pokemonFamily)
+      const candies = Object.assign(...items.map(each => each.pokemonFamily || each.candy)
         .filter(each => each)
         .map(each => ({ [each.familyId]: each })));
 
       const captured = Object.assign(...items.map(each => each.pokedexEntry)
         .filter(each => each && each.timesCaptured)
-        .map(each => ({ [each.pokedexEntryNumber]: each })));
+        .map(each => ({ [each.pokedexEntryNumber || each.pokemonId]: each })));
 
-      const pokemons = values(items.map(each => each.pokemon)
+      const pokemons = values(items.map(each => each.pokemon || each.pokemonData)
         .filter(each => each && !each.isEgg)
         .reduce((prevState, curr) => {
           const { pokemonId } = curr;

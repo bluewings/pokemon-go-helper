@@ -9,11 +9,11 @@ module.exports = (pokeio) => {
 
       const items = inventoryItems.map(each => each.inventoryItemData);
 
-      const candies = Object.assign(...items.map(each => each.pokemonFamily)
+      const candies = Object.assign(...items.map(each => each.pokemonFamily || each.candy)
         .filter(each => each)
         .map(each => ({ [each.familyId]: each })));
 
-      const pokemons = items.map(each => each.pokemon)
+      const pokemons = items.map(each => each.pokemon || each.pokemonData)
         .filter(each => each && !each.isEgg)
         // pokodex 를 참고로 추가 정보를 붙임
         .map((each) => {

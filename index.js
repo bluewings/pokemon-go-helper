@@ -1,6 +1,7 @@
 const fsExtra = require('fs-extra');
 const path = require('path');
-const Pokeio = require('./lib/Pokeio').Pokeio;
+// const Pokeio = require('./lib/Pokeio').Pokeio;
+const Pokeio = require('./lib/pogobuf').Pokeio;
 const util = require('./lib/util');
 const task = require('./task');
 

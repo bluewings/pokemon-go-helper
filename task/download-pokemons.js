@@ -12,11 +12,11 @@ module.exports = (pokeio, options) => {
 
       const items = inventoryItems.map(each => each.inventoryItemData);
 
-      const candies = Object.assign(...items.map(each => each.pokemonFamily)
+      const candies = Object.assign(...items.map(each => each.pokemonFamily || each.candy)
         .filter(each => each)
         .map(each => ({ [each.familyId]: each })));
 
-      const summary = items.map(each => each.pokemon)
+      const summary = items.map(each => each.pokemon || each.pokemonData)
         .filter(each => each && !each.isEgg)
         .map((each) => {
           const { pokemonId } = each;
@@ -76,6 +76,7 @@ module.exports = (pokeio, options) => {
           delete next.id;
           delete next.capturedCellId;
           delete next.creationTimeMs;
+          delete next.pokemonDisplay;
           return next;
         })
         .reduce((data, each) => {
