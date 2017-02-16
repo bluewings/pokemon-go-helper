@@ -1,3 +1,7 @@
+<span style="color:red;">[#4](https://github.com/bluewings/pokemon-go-helper/issues/4) 이슈와 관련하여 API 연동 라이브러리를 [Pokemon-GO-node-api](https://github.com/Armax/Pokemon-GO-node-api)에서 [pogobuf](https://github.com/cyraxx/pogobuf)로 변경 예정입니다.</span>
+
+---
+
 # pokemon-go-helper
 
 포켓몬고에 도움이 되는 스크립트 모음입니다.
