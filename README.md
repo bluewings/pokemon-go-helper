@@ -1,5 +1,13 @@
-<span style="color:red;">[#4](https://github.com/bluewings/pokemon-go-helper/issues/4) 이슈와 관련하여 API 연동 라이브러리를 [Pokemon-GO-node-api](https://github.com/Armax/Pokemon-GO-node-api)에서 [pogobuf](https://github.com/cyraxx/pogobuf)로 변경 예정입니다.</span>
+## 기존 사용자들 중요 공지!
 
+[receive endpoint가 null 로 나옵니다](https://github.com/bluewings/pokemon-go-helper/issues/4) 이슈 해결을 위해 API 연동 라이브러리를 [Pokemon-GO-node-api](https://github.com/Armax/Pokemon-GO-node-api)에서 [pogobuf](https://github.com/cyraxx/pogobuf)로 변경되었습니다.
+동일한 증상을 겪으시는 사용자 분들은 아래 명령 실행 후에 다시 하시면 됩니다.
+```
+git pull
+npm install
+```
+
+*. 신규로 설치하시는 분은 상관없습니다.
 ---
 
 # pokemon-go-helper
