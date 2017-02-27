@@ -1,6 +1,6 @@
 ## 기존 사용자들 중요 공지!
 
-지난 주 실행불가했던 이슈가 관련 라이브러리([pogobuf](https://github.com/cyraxx/pogobuf))의 패치로 해결되었습니다. 
+2세대 포켓몬 추가 실행불가능했던 상황이 발생하였는데, 라이브러리([pogobuf](https://github.com/cyraxx/pogobuf))의 패치로 해결되었습니다. 
 
 ```npm update``` 명령으로 라이브러리들을 최신 버전으로 올리시고 실행하시면됩니다.
 
